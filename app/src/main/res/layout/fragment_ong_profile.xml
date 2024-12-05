@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/ong_profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="215dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Profile Picture"
+            android:src="@drawable/rock1" />
+
+        <TextView
+            android:id="@+id/ong_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome da ONG"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/ong_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resumo sobre a ONG"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnViewCandidates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Candidatos" />
+
+            <Button
+                android:id="@+id/btnEditProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Editar perfil"
+                android:layout_marginStart="10dp" />
+
+            <Button
+                android:id="@+id/btnCreateCampaign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Campanha"
+                android:layout_marginStart="10dp" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

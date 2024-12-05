@@ -1,0 +1,42 @@
+<!-- item_campanha.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Imagem da campanha -->
+    <ImageView
+        android:id="@+id/campanha_imagem"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Nome da campanha -->
+    <TextView
+        android:id="@+id/campanha_nome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nome da Campanha"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/campanha_imagem"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Descrição da campanha -->
+    <TextView
+        android:id="@+id/campanha_descricao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Descrição breve da campanha"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/campanha_nome"
+        app:layout_constraintStart_toStartOf="@id/campanha_nome"
+        app:layout_constraintEnd_toEndOf="@id/campanha_nome"
+        android:layout_marginTop="8dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
